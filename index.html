@@ -29,6 +29,16 @@
                 設定
             </div>
         </h2>
+        <div class="ui icon green message">
+            <i class="thumbs up outline icon"></i>
+            <i class="close icon"></i>
+            <div class="content">
+                <div class="header">
+                    単位落としそうだと思ってない?
+                </div>
+                <p>火曜日の必修科目は生命化学だけだから大丈夫！</p>
+            </div>
+        </div>
         <div class="ui divider"></div>
         <ul>
             <li><i class="power off icon"></i><a href="./biochemistry.html">生命化学</a></li>
@@ -46,6 +56,14 @@
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="./Semantic-UI-CSS-master/semantic.min.js"></script>
 
+    <script>
+        $('.message .close')
+            .on('click', function () {
+                $(this)
+                    .closest('.message')
+                    .transition('fade');
+            });
+    </script>
 </body>
 
 </html>
